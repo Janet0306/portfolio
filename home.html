@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/887809650c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <h2 id="logo">Janet Webster</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">About Me</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hello! My name is Janet Webster. I have recently graduated from
+              The University of the West of Scotland with a First Class Honours
+              degree in Mobile and Web Development.
+            </p>
+            <p>
+              In 2017 I took the difficult decision to change my career. Until
+              this point, I had held various roles in retail head offices.
+              However, after a period of reflection, I felt that this career
+              path was no longer fulfilling for me and therefore decided to
+              change.
+            </p>
+            <p>
+              With a background in both retail and business, I have developed
+              several soft skills. I have experienced roles that have allowed me
+              to lead a team, demonstrate effective communication, and work to
+              deliver success.
+            </p>
+            <p>
+              I am a hard-working individual, with a strong passion to succeed.
+              I thrive in situations where I am able to help and support others.
+              I seek opportunities to develop my skills, in order to continue
+              growing and improving. I am a friendly and approachable individual
+              who enjoys forming relationships.
+            </p>
+            <p>
+              Fun fact! I've been programing for
+              <span id="time-container">0</span> seconds!
+            </p>
+          </div>
+          <img
+            src="/images/headshot.jpg"
+            alt="A photo of Janet Webster"
+            class="portrait"
+          />
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Teach</h3>
+          </summary>
+          <img
+            src="/images/teach_2.jpeg"
+            alt="Landing page of teach"
+            class="project-image"
+          />
+          <p class="project-description">
+            An E-learning platform built using MERN. Students can add courses to
+            their account and complete them.
+          </p>
+          <p class="project-description">
+            For my 4th Year Honours project I decided to learn a completely new
+            stack – the MERN stack. Prior to this point I didn&#39t have much
+            experience in NoSQL databases, and although I had a good level of
+            knowledge of JavaScript, I had not used the React framework.
+          </p>
+          <p class="project-description">
+            Teach has a secure login/registration system. Once a user registers
+            they are directed to a profile section of the site and encouraged to
+            fill the section out, once this has been completed they will then be
+            directed to their personalised dashboard. The dashboard is the
+            section of the site where a user can view any topics that they have
+            chosen to complete. The dashboard will also display the user&#39s name
+            and allow then to edit their profile or delete their account. Each
+            topic contains a quiz, factsheet and flashcards and there is a
+            search feature so that users can easily locate a topic.
+          </p>
+          <p class="project-description">
+            As well as being educational, the site also has a social component.
+            The web app has a section that allows all users to search and see
+            all students that are on the site. There is also a discussion board
+            where users can post questions and fellow users can post replies.
+            Users profiles also have a section for users to add there social
+            media handles so that other users can connect.
+          </p>
+          <p class="project-description">All code can be found on GitHub</p>
+          <a href="https://www.teachus.duckdns.org/">Teach</a>
+          
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>ProGadgets</h3>
+          </summary>
+          <img
+            src="/images/proGadget.JPG"
+            alt="An original model of part of the Analytical Engine"
+            class="project-image"
+          />
+          <p class="project-description">
+            An E-Commerce project using the MERN stack.
+          </p>
+          <p class="project-description">
+            The shop has user authentication system, an admin user who can add
+            new products, check for orders and payments and also choose which
+            order has been delivered from the store. It is also connected to
+            PayPal for payments.
+          </p>
+          <p class="project-description">All code can be found on GitHub</p>
+          <a href="https://proshop9090.herokuapp.com/">ProGadgets</a>
+        </details>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fa-brands fa-php"></i>
+          <i class="fa-brands fa-laravel"></i>
+          <i class="fab fa-aws"></i>
+          <i class="fab fa-git"></i>
+          <i class="fab fa-chrome"></i>
+          <i class="fas fa-terminal"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Please get in touch!</p>
+        <div>
+          <a
+            href="https://uk.linkedin.com/in/janet-webster?msclkid=53cf1cd5a91211ec8474c3eca8cd21e2"
+            ><i class="fab fa-linkedin icon"></i
+          ></a>
+          <a href="https://github.com/Janet0306"
+            ><i class="fab fa-github icon"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>Made with <span class="heart">♥</span> in Glasgow</footer>
+  </body>
+  <script>
+    const timeContainer = document.getElementById('time-container')
+    const BIRTH_DAY = '12-08-2017'
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY)
+    const intlNumberFormatter = new Intl.NumberFormat('en-US')
+
+    setInterval(() => {
+      const now = new Date()
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      )
+
+      timeContainer.innerText = intlNumberFormatter.format(difference)
+    }, 1000)
+  </script>
+</html>
